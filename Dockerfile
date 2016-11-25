@@ -31,7 +31,7 @@ RUN tar -xvf atlassian-confluence-6.0.1.tar.gz --strip-components=1
 
 RUN rm -rf atlassian-confluence-6.0.1.tar.gz
 
-#ADD server.xml /opt/confluence/conf/
+ADD server.xml /opt/confluence/conf/
 
 #RUN sed -i "s/Xms1024m/Xms128m/g" "/opt/confluence/confluence/bin/setenv.sh"
 WORKDIR /home
